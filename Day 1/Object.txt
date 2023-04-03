@@ -1,0 +1,8 @@
+Write a blog about objects and its internal representation in Javascript.
+
+Objects : 
+    An object is a collection of properties, and a property is an association of a key and a value. A property's value can be a function, in which case the property is known as a method.
+    In Javascript, an object is a standalone entity, with properties and type. In addition to obejcts that are predefined in the browser, we can define our own objects.
+    We can change the key's value by using by accesing it 
+        objectName[key] = newValue;
+    the above code changes the value for particular key.

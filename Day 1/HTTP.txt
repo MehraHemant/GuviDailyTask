@@ -1,0 +1,8 @@
+HTTP stands for hypertext transfer protocal & it is used in client-server communication.
+
+HTTP1.1 - 
+    HTTP/1.1 works on the textual format while HTTP/2 works on the binary protocal.
+    HTTP/1.1 uses requests resouce inlining for use getting multiple pages.
+    HTTP/2 uses push frame by server that collects all multiple requests.
+
+Multiplex is a method used by networks to consolidate multiple signals into a single composite signal.
