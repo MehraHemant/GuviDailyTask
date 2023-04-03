@@ -1,0 +1,1 @@
+The window object represent a window/tab containing DOM document whereas document object is property of window object that points to the DOM document loaded in that window.
