@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinates</title>
+</head>
+<body>
+    <h1 id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error sapiente quia, pariatur nemo provident.</h1>
+    <span></span>
+
+    <script>
+        heading.addEventListener('click', (e)=>{
+            let x = e.clientX;
+            let y = e.clientY;
+            document.getElementsByTagName('span')[0].innerHTML = `[X: ${x}, Y: ${y}]`;
+        })
+    </script>
+</body>
+</html>

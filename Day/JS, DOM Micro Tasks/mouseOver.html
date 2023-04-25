@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MouseOver</title>
+  </head>
+  <body>
+    <div>I'm changing background color for this div to green when you move your cursor over this line.</div>
+    <script>
+        
+      let span = document.getElementsByTagName('div')[0];
+      span.addEventListener('mouseover', ()=>span.style.backgroundColor = 'green')
+      span.addEventListener('mouseout', ()=>span.style.backgroundColor = 'white')
+    </script>
+  </body>
+</html>

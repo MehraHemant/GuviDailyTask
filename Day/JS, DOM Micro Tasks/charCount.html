@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Count</title>
+    <style>
+        textarea{
+            height: 150px;
+            width: 80vw;
+            border: 2px solid ;
+            border-radius: 4px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="char" id="char" placeholder="Enter your text here."></textarea>
+    <br><br>
+    <div id="counter">Char : 0</div>
+
+    <script>
+    (char).addEventListener('keyup', (e)=>{
+        let count = e.target.value.length;
+        (count!=null)?counter.innerHTML = 'Char : '+ count:null;
+    })
+    </script>
+</body>
+</html>
+
+<!-- keypress Fires when an actual character is being inserted in, for instance, a text input. It repeats while the user keeps the key pressed. keyup Fires when the user releases a key, after the default action of that key has been performed. -->

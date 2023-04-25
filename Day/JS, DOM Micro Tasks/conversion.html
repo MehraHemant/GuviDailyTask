@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Conversion</title>
+  </head>
+  <body>
+    <label for="number">Number</label>
+    <input type="number" name="" id="number" />
+    <button id="convert">Convert</button>
+    <div id="binary"></div>
+    <div id="hexadecimal"></div>
+
+    <script>
+      convert.addEventListener("click", () => {
+        bin = "";
+        num = number.value;
+        for (num; num >= 1; num = Math.floor(num / 2)) {
+          if (num % 2 == 1) {
+            bin += "1";
+          } else {
+            bin += "0";
+          }
+        }
+          binary.innerHTML = "Binary : " + bin.split("").reverse().join("");
+      });
+
+      // convert.addEventListener("click", () => {
+      //   bin = [];
+      //   num = number.value;
+      //   for (num; num >= 1; num = Math.floor(num / 2)) {
+      //     if (num % 2 == 1) {
+      //       bin.push(1);
+      //     } else {
+      //       bin.push(0);
+      //     }
+      //     console.log(binary);
+      //   }
+      //   binary.innerHTML = "Binary : " + bin.reverse().join('');
+      // });
+    </script>
+  </body>
+</html>
